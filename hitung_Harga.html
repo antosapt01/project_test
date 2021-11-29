@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+	let hrg_Barng = prompt("Harga Barang : ");
+    let pajak = prompt("Apakah harga termasuk pajak [ Y / T ]");
+    	if(pajak == "Y"){
+        	 let persen_pajak = prompt("Berapa % Pajak : ");
+       		 let nilai_pajak =  (parseInt(persen_pajak) / 100) * parseInt(hrg_Barng);
+             
+             let hrg_pajak  = parseInt(hrg_Barng) - parseInt(nilai_pajak);
+    
+    		 alert(" Harga barang termasuk pajak : "+ hrg_Barng+
+		     ", Nilai pajak : "+nilai_pajak+
+    	     ", Harga barang sebelum pajak : "+hrg_pajak);
+        }else{
+           let persen_pajak = prompt("Berapa % Pajak : ");
+       		 let nilai_pajak =  (parseInt(persen_pajak) / 100) * parseInt(hrg_Barng);
+             let hrg_pajak  = parseInt(hrg_Barng) + parseInt(nilai_pajak);
+           
+          alert(" Harga barang termasuk pajak : "+ hrg_pajak+
+		  ", Nilai pajak : "+nilai_pajak+
+    	  ", Harga barang sebelum pajak : "+hrg_Barng);
+        }
+
+    
+</script>
+
+</body>
+</html>
+
